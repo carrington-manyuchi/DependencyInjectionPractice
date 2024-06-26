@@ -12,8 +12,10 @@ import Foundation
 final class Feature1Page1Presenter: Feature1Page1Presenting {
     
     private let webService: WebServicing
+    private let calculator: MyCalculator
     
-    init(webService: WebServicing) {
+    init(webService: WebServicing, calculator: MyCalculator) {
         self.webService = webService
+        self.calculator = calculator
     }
 }

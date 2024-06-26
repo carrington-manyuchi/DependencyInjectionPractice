@@ -15,7 +15,7 @@ protocol Feature1Page1Dependency {
 }
 
 
-private final class Feature1Page1Component {
+private final class Feature1Page1Component: Feature1Page2Dependency {
     
     private let dependency: Feature1Page1Dependency
     
@@ -34,6 +34,10 @@ private final class Feature1Page1Component {
     var abTester: ABTestable {
         return dependency.abTester
     }
+    
+    var calculator: MyCalculator {
+        return MyCalculator()
+    }
 }
 
 final class Feature1Page1Router {
@@ -45,10 +49,15 @@ final class Feature1Page1Router {
     }
     
     func createViewController() -> Feature1Page1ViewController {
-        let feature1Page1Presenter = Feature1Page1Presenter(webService: component.webService)
-        let feature1Page1ViewController = Feature1Page1ViewController(presenter: feature1Page1Presenter,
-                                                                      tracker: component.tracker,
-                                                                      abTester: component.abTester)
+        let feature1Page1Presenter = Feature1Page1Presenter(webService: component.webService, 
+                                                            calculator: component.calculator)
+        let feature1Page1ViewController = Feature1Page1ViewController(presenter: feature1Page1Presenter )
         return feature1Page1ViewController
+    }
+    
+    func routeToPage2() {
+        let _ = Feature1Page2Router(dependency: component).createViewController()
+        print("route to feature1Page2ViewController")
+
     }
 }

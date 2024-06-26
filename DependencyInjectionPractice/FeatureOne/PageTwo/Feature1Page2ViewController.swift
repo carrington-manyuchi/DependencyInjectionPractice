@@ -7,17 +7,25 @@
 
 import UIKit
 
+final class Page2AwesomeFormatter {
+    func format() {
+        print("and it does it awesomely")
+    }
+}
+
 class Feature1Page2ViewController: UIViewController {
     
     private let tracking: Tracking
     private let abTester: ABTestable
+    private let myAwesomeFormatter: Page2AwesomeFormatter
     
-  //  private let component: Feature1Page2Component
-
-    
-    init(tracking: Tracking, abTester: ABTestable) {
+    init(tracking: Tracking, 
+         abTester: ABTestable,
+         myAwesomeFormatter: Page2AwesomeFormatter,
+         myCalculator: MyCalculator) {
         self.tracking = tracking
         self.abTester = abTester
+        self.myAwesomeFormatter = myAwesomeFormatter
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -27,5 +35,7 @@ class Feature1Page2ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tracking.track()
+        abTester.testStsuff()
     }
 }

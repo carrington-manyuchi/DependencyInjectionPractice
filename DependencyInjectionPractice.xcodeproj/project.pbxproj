@@ -24,8 +24,8 @@
 		E649EE8F2C2C033C00F8D554 /* ABTestableImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649EE8E2C2C033C00F8D554 /* ABTestableImplementation.swift */; };
 		E649EE962C2C058B00F8D554 /* Feature1Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649EE952C2C058B00F8D554 /* Feature1Page2ViewController.swift */; };
 		E649EE992C2C16E300F8D554 /* Feature1Page2Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649EE982C2C16E300F8D554 /* Feature1Page2Router.swift */; };
-		E649EE9C2C2C1A2900F8D554 /* Feature1Page2Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649EE9B2C2C1A2800F8D554 /* Feature1Page2Component.swift */; };
 		E649EE9E2C2C21ED00F8D554 /* Feature1Page1Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649EE9D2C2C21ED00F8D554 /* Feature1Page1Router.swift */; };
+		E649EEA02C2C44C700F8D554 /* MyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649EE9F2C2C44C700F8D554 /* MyCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,8 +48,8 @@
 		E649EE8E2C2C033C00F8D554 /* ABTestableImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABTestableImplementation.swift; sourceTree = "<group>"; };
 		E649EE952C2C058B00F8D554 /* Feature1Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature1Page2ViewController.swift; sourceTree = "<group>"; };
 		E649EE982C2C16E300F8D554 /* Feature1Page2Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature1Page2Router.swift; sourceTree = "<group>"; };
-		E649EE9B2C2C1A2800F8D554 /* Feature1Page2Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature1Page2Component.swift; sourceTree = "<group>"; };
 		E649EE9D2C2C21ED00F8D554 /* Feature1Page1Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature1Page1Router.swift; sourceTree = "<group>"; };
+		E649EE9F2C2C44C700F8D554 /* MyCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				E649EE9A2C2C173F00F8D554 /* Dependencies */,
+				E649EE9F2C2C44C700F8D554 /* MyCalculator.swift */,
 				E649EE802C2BE34D00F8D554 /* Feature1Page1Presenting.swift */,
 				E649EE862C2BE4ED00F8D554 /* Feature1Page1Presenter.swift */,
 				E649EE7E2C2BE2C400F8D554 /* Feature1Page1ViewController.swift */,
@@ -152,7 +153,6 @@
 			children = (
 				E649EE9D2C2C21ED00F8D554 /* Feature1Page1Router.swift */,
 				E649EE982C2C16E300F8D554 /* Feature1Page2Router.swift */,
-				E649EE9B2C2C1A2800F8D554 /* Feature1Page2Component.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -242,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E649EE9E2C2C21ED00F8D554 /* Feature1Page1Router.swift in Sources */,
+				E649EEA02C2C44C700F8D554 /* MyCalculator.swift in Sources */,
 				E649EE8D2C2C030900F8D554 /* ABTestable.swift in Sources */,
 				E649EE832C2BE3D500F8D554 /* Tracking.swift in Sources */,
 				E649EE8F2C2C033C00F8D554 /* ABTestableImplementation.swift in Sources */,
@@ -249,7 +250,6 @@
 				E649EE872C2BE4ED00F8D554 /* Feature1Page1Presenter.swift in Sources */,
 				E649EE812C2BE34D00F8D554 /* Feature1Page1Presenting.swift in Sources */,
 				E649EE672C2BDD6700F8D554 /* AppDelegate.swift in Sources */,
-				E649EE9C2C2C1A2900F8D554 /* Feature1Page2Component.swift in Sources */,
 				E649EE992C2C16E300F8D554 /* Feature1Page2Router.swift in Sources */,
 				E649EE962C2C058B00F8D554 /* Feature1Page2ViewController.swift in Sources */,
 				E649EE892C2BE58100F8D554 /* WebServicing.swift in Sources */,
