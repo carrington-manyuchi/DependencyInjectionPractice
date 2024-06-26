@@ -25,6 +25,7 @@
 		E649EE962C2C058B00F8D554 /* Feature1Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649EE952C2C058B00F8D554 /* Feature1Page2ViewController.swift */; };
 		E649EE992C2C16E300F8D554 /* Feature1Page2Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649EE982C2C16E300F8D554 /* Feature1Page2Router.swift */; };
 		E649EE9C2C2C1A2900F8D554 /* Feature1Page2Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649EE9B2C2C1A2800F8D554 /* Feature1Page2Component.swift */; };
+		E649EE9E2C2C21ED00F8D554 /* Feature1Page1Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649EE9D2C2C21ED00F8D554 /* Feature1Page1Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		E649EE952C2C058B00F8D554 /* Feature1Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature1Page2ViewController.swift; sourceTree = "<group>"; };
 		E649EE982C2C16E300F8D554 /* Feature1Page2Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature1Page2Router.swift; sourceTree = "<group>"; };
 		E649EE9B2C2C1A2800F8D554 /* Feature1Page2Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature1Page2Component.swift; sourceTree = "<group>"; };
+		E649EE9D2C2C21ED00F8D554 /* Feature1Page1Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature1Page1Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		E649EE972C2C16CB00F8D554 /* Routers */ = {
 			isa = PBXGroup;
 			children = (
+				E649EE9D2C2C21ED00F8D554 /* Feature1Page1Router.swift */,
 				E649EE982C2C16E300F8D554 /* Feature1Page2Router.swift */,
 				E649EE9B2C2C1A2800F8D554 /* Feature1Page2Component.swift */,
 			);
@@ -238,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E649EE9E2C2C21ED00F8D554 /* Feature1Page1Router.swift in Sources */,
 				E649EE8D2C2C030900F8D554 /* ABTestable.swift in Sources */,
 				E649EE832C2BE3D500F8D554 /* Tracking.swift in Sources */,
 				E649EE8F2C2C033C00F8D554 /* ABTestableImplementation.swift in Sources */,

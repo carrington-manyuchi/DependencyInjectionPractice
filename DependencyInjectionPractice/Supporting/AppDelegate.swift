@@ -7,21 +7,22 @@
 
 import UIKit
 
+private final class AppComponent: Feature1Page1Dependency {
+    
+    var webService: WebServicing = WebServicingImplementation()
+    var tracker: Tracking = TrackingImplementation()
+    var abTester: ABTestable = ABTestableImplementation()
+    
+}
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
-        let webService = WebServicingImplementation()
-        let tracker = TrackingImplementation()
-        let abTest = ABTestableImplementation()
-
-        let feature1Page1Presenter = Feature1Page1Presenter(webService: webService)
-        let feature1Page1ViewController = Feature1Page1ViewController(presenter: feature1Page1Presenter, 
-                                                                      tracker: tracker,
-                                                                      abTester: abTest)
+        
+        let appComponent = AppComponent()
+        
+        let feature1Page1ViewController = Feature1Page1Router(dependency: appComponent)
 
         print(feature1Page1ViewController)
         

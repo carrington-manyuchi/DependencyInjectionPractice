@@ -7,11 +7,11 @@
 
 import UIKit
 
-class Feature1Page1ViewController: UIViewController {
+class Feature1Page1ViewController: UIViewController, Feature1Page2Dependency {
     
     private let presenter: Feature1Page1Presenting
-    private let tracker: Tracking
-    private let abTester: ABTestable
+    internal let tracker: Tracking
+    internal let abTester: ABTestable
 
     
     init(presenter: Feature1Page1Presenting, tracker: Tracking, abTester: ABTestable) {
@@ -31,8 +31,7 @@ class Feature1Page1ViewController: UIViewController {
     }
     
     private  func navigateToPageTwo() {
-        let feature1Page2ViewController = Feature1Page2Router(tracker: tracker,
-                                                              abTester: abTester).createViewController()
+        let feature1Page2ViewController = Feature1Page2Router(dependency: self).createViewController()
         print("route to feature1Page2ViewController \(feature1Page2ViewController)")
     }
 
